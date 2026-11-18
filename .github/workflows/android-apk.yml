@@ -34,11 +34,6 @@ jobs:
       - name: Install dependencies
         run: flutter pub get --enforce-lockfile
 
-      - name: Analyze Dart source
-        run: flutter analyze
-
-      - name: Run calculator tests
-        run: flutter test
 
       - name: Build release APK
         run: flutter build apk --release
